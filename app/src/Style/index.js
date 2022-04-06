@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+    
     icon: {
         width: "80%",
         height: "80%"
@@ -12,9 +13,10 @@ const styles = StyleSheet.create({
       camera: {
         width: "100%",
         height: "100%",
+        flex: 2,
       },
       buttonContainer: {
-        flex: 1,
+        flex: 3,
         backgroundColor: "transparent",
         flexDirection: "row"
       },
