@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Image, Modal, SafeAreaView, Text, View, TouchableOpacity} from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { MaterialIcons } from '@expo/vector-icons';
 import { Camera } from 'expo-camera';
 import * as MediaLibrary from 'expo-media-library';
 import * as Location from 'expo-location';
@@ -96,11 +98,11 @@ export default function UseCam({CloseModalPhoto, dataForm}) {
                   : Camera.Constants.Type.back
               );
             }}>
-              <Text>Flip</Text>
+              <MaterialIcons name="flip-camera-ios" size={24} color="black" />
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonTake}
             onPress={take}>
-            <Text>Take</Text>
+            <Ionicons name="camera" size={24} color="black" />
           </TouchableOpacity>
         </View>
       </Camera>
@@ -108,10 +110,10 @@ export default function UseCam({CloseModalPhoto, dataForm}) {
         <View style={styles.contentPhoto}>
           <View style={styles.contentPhotoButton}>
             <TouchableOpacity style={styles.buttonClose} onPress={() => setOpen(false)}>
-              <Text>Fechar</Text>
+            <Ionicons name="exit-sharp" size={24} color="black" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonConfirm} onPress={CloseModalPhoto}>
-              <Text>Confirmar</Text>
+            <Ionicons name="checkmark" size={24} color="black" />
             </TouchableOpacity>
           </View>
           <Image style={styles.img} source={{ uri: captured }} />
