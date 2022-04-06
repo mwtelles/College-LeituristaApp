@@ -9,16 +9,17 @@ const styles = StyleSheet.create({
       container: {
         flex: 1,
         justifyContent: 'center',
+        backgroundColor: "#000",
       },
       camera: {
         width: "100%",
-        height: "100%",
         flex: 2,
       },
       buttonContainer: {
-        flex: 3,
+        flex: 1,
         backgroundColor: "transparent",
-        flexDirection: "row"
+        flexDirection: "row",
+        
       },
       buttonFlip: {
         position: "absolute",
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
       },
       contentPhoto: {
         flex: 1,
-        margin: 10,
+        backgroundColor: "#000"
       },
       contentPhotoButton: {
         flex: 1,
@@ -55,30 +56,29 @@ const styles = StyleSheet.create({
       img: {
         width: "100%",
         height: "80%",
+        marginBottom: 40,
       },
       buttonClose: {
         position: "absolute",
-        bottom: 50,
-        right: 30,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#fff",
-        margin: 20,
-        width: 90,
-        height: 50,
-        borderRadius: 20,
-      },
-      buttonConfirm: {
-        position: "absolute",
-        bottom: 50,
+        top: 60,
         left: 30,
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#fff",
-        margin: 20,
-        width: 90,
+        width: 50,
         height: 50,
-        borderRadius: 20,
+        borderRadius: 50,
+      },
+      buttonConfirm: {
+        position: "absolute",
+        top: 60,
+        right: 30,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#fff",
+        width: 50,
+        height: 50,
+        borderRadius: 50,
       },
       selectInput: {
         fontSize: 18,

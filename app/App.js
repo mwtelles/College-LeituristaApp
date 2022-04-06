@@ -52,7 +52,7 @@ export default function App() {
         maxLength={8}
       />
       <RNPickerSelect
-            onValueChange={(situacao) => console.log(situacao)}
+            onValueChange={(setSituacao)}
             items={[
                 { label: 'Leitura Implausível', value: 'Leitura Implausível' },
                 { label: 'Releitura', value: 'Releitura' },
